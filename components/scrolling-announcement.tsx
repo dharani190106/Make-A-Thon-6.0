@@ -15,8 +15,8 @@ export default function ScrollingAnnouncement({
             eventDate="Date Changed: April 29-30, 2025",
             eventLocation="Sri Venkateswara College of Engineering",
             registrationDeadline="Date Changed: April 14, 2025",
-            problemStatement = "Phase 1 Problem Statement Released",
-            checkOut = "Phase 2 Problem Statement Released",
+            // problemStatement = "Phase 1 Problem Statement Released",
+            // checkOut = "Phase 2 Problem Statement Released",
 }: ScrollingAnnouncementProps) {
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -37,16 +37,16 @@ export default function ScrollingAnnouncement({
       text: `VENUE: ${eventLocation}`,
       highlight: false,
     },
-    {
-      icon: <Zap className="h-5 w-5 text-cyan-400" />,
-      text: `PROBLEM STATEMENT: ${problemStatement}`,
-      highlight: false,
-    },
-    {
-      icon: <Zap className="h-5 w-5 text-cyan-400" />,
-      text: `${checkOut}`,
-      highlight: false,
-    },
+    // {
+    //   icon: <Zap className="h-5 w-5 text-cyan-400" />,
+    //   text: `PROBLEM STATEMENT: ${problemStatement}`,
+    //   highlight: false,
+    // },
+    // {
+    //   icon: <Zap className="h-5 w-5 text-cyan-400" />,
+    //   text: `${checkOut}`,
+    //   highlight: false,
+    // },
   ]
 
   return (
