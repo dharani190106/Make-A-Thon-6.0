@@ -20,10 +20,10 @@ export default function FloatingDateBadge() {
             <Calendar className="h-4 w-4 text-cyan-400" />
             <span className="text-white font-bold text-sm">MAKE-A-THON 6.0</span>
           </div>
-          <div className="text-purple-300 text-xs font-medium mb-1">Event Date Changed !!!</div>
+          <div className="text-purple-300 text-xs font-medium mb-1">Shortlisted Teams Announced</div>
           <div className="flex items-center gap-1 text-gray-400 text-xs">
 {/*             <Clock className="h-3 w-3" /> */}
-            <span>April 29-30, 2025</span>
+            <span>Reg Fee: Rs.350/- Per Person</span>
           </div>
 
           {/* Animated pulse ring */}
