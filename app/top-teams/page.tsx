@@ -183,10 +183,10 @@ export default function TopTeamsPage() {
     },
     {
       id: "MAT025",
-      name: "Tech Titans",
-      leadName: "Kambakam Keerthana",
-      college: "Velammal Institute of Technology",
-      domain: "Software",
+      name: "ByteBash",
+      leadName: "Harshinivarsa S.K",
+      college: "SVCE",
+      domain: "Hardware",
     },
     {
       id: "MAT026",
