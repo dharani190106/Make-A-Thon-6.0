@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { Canvas } from "@react-three/fiber"
 import {
   Environment,
@@ -14,7 +15,67 @@ import {
   Stars,
 } from "@react-three/drei"
 import { Button } from "@/components/ui/button"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, ArrowRight } from "lucide-react"
+
+
+// Inline styling for the cool result button (inspired by your Uiverse example)
+const customStyles = `
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-content:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .icon-arrow {
+    margin-left: 15px;
+    transform: scale(0.6);
+    transition: all 0.3s ease;
+  }
+
+  .btn-content:hover .icon-arrow {
+    margin-left: 25px;
+  }
+
+  #arrow-icon-one,
+  #arrow-icon-two {
+    transform: translateX(-30%);
+    transition: 0.5s;
+  }
+
+  .btn-content:hover #arrow-icon-one,
+  .btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+  }
+
+  .btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+
+  @keyframes color_anim {
+    0%, 100% { fill: white; }
+    50% { fill: #06b6d4; }
+  }
+`;
 
 // Digital Grid Floor
 function DigitalGrid() {
@@ -313,38 +374,49 @@ export default function HeroSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="flex flex-col md:flex-row gap-4 justify-center"
-        >
-           <Button
-            variant="outline"
-            className="border-cyan-500 text-cyan-400 hover:bg-cyan-950 px-8 py-6 text-lg shadow-lg shadow-cyan-500/20"
-          >
-            <a href="https://forms.gle/oW4ycK2F98gr4dVK6" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-            Register Now
-            </a>
-          </Button>
-          
-         
-          <Button
-            variant="outline"
-            className="border-cyan-500 text-cyan-400 hover:bg-cyan-950 px-8 py-6 text-lg shadow-lg shadow-cyan-500/20"
-          >
-            <a href="https://docs.google.com/presentation/d/1mc2zUR4ufkX848VjtCk6hZOippO4w_3b/edit?usp=drive_link&ouid=116110708186730314134&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-            Abstract Template
-            </a>
-          </Button>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 1.5 }}
+  className="flex flex-col items-center gap-4"
+>
+  {/* First Line: RESULTS Button */}
+  <Link href="/top-teams" className="w-full md:w-auto">
+  <Button
+      variant="outline"
+      className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-lg px-8 py-6 text-white border-none w-full mt-4s"
+    >
+      
+        Results
+      
+      <ArrowRight className="ml-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1" />
+    </Button>
+  </Link>
+
+  {/* Second Line: Register + Learn More */}
+  <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+    <Button
+      variant="outline"
+      className="border-cyan-500 text-cyan-400 hover:bg-cyan-950 px-8 py-6 text-lg shadow-lg shadow-cyan-500/20"
+    >
+      <a href="https://forms.gle/oW4ycK2F98gr4dVK6" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+        Register Now
+      </a>
+    </Button>
+
+    <Button
+      variant="outline"
+      className="border-cyan-500 text-cyan-400 hover:bg-cyan-950 px-8 py-6 text-lg shadow-lg shadow-cyan-500/20"
+    >
+      <a href="#about" className="cursor-pointer">
+        Learn More
+      </a>
+    </Button>
+  </div>
+</motion.div>
 
 
-           <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-none px-8 py-6 text-lg shadow-lg shadow-cyan-500/20">
-          <a href="#about" className="cursor-pointer">
-            Learn More
-            </a>
-          </Button>
-          
-        </motion.div>
+
+
 
         </div>
 
