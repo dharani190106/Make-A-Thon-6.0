@@ -170,7 +170,7 @@ export default function TopTeamsPage() {
     {
       id: "MAT023",
       name: "Red Dragon",
-      leadName: "Akash A",
+      leadName: "Sneka P",
       college: "SVCE",
       domain: "Software",
     },
