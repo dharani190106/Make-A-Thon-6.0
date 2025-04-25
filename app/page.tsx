@@ -32,7 +32,8 @@ export default function Home() {
         <AboutSection scrollYProgress={scrollYProgress} />
         <TimelineSection />
         <ThemeSection />
-        <Staytuned />
+        <ScheduleSection />
+        {/* <Staytuned /> */}
         <SocialFeedSection />
         <SponsorsSection />
         <AchievementsSection />
