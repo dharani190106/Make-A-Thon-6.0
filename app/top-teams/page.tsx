@@ -239,9 +239,9 @@ export default function TopTeamsPage() {
     },
     {
       id: "MAT033",
-      name: "Infinity Coders",
-      leadName: "Merlin A",
-      college: "Rajalakshmi Institute of Technology",
+      name: "Fusion",
+      leadName: "Chandrakanth P",
+      college: "SRM Institute of Science and Technology",
       domain: "Software",
     },
     {
@@ -360,13 +360,7 @@ export default function TopTeamsPage() {
     college: "SVCE",
     domain: "Software",
   },
-  {
-    id: "WL010",
-    name: "Fusion",
-    leadName: "Chandrakanth P",
-    college: "SRM Institute of science and technology",
-    domain: "Software",
-  },
+
 ]
 
 

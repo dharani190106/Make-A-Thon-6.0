@@ -1,4 +1,4 @@
-// File: D:\SVCE\ECE\my work\ECEAssociation\website\deploy_mail_change_2\Make-A-Thon-6.0-main\Make-A-Thon-6.0-main\app\top-teams\page.tsx
+// File: D:\SVCE\ECE\my work\ECEAssociation\website\deploy_mail_change_2\Make-A-Thon-6.0\app\top-teams\page.tsx
 import * as entry from '../../../../app/top-teams/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
