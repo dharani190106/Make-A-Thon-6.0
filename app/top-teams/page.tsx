@@ -643,7 +643,7 @@ export default function TopTeamsPage() {
                 </div>
               </div>
             </div>
-            <div className="p-4 rounded-lg bg-cyan-900/20 border border-cyan-500/30">
+            {/* <div className="p-4 rounded-lg bg-cyan-900/20 border border-cyan-500/30">
               <h3 className="text-lg font-medium text-cyan-300 mb-2">Waiting List</h3>
               <div className="flex justify-between items-center">
                 <div>
@@ -663,7 +663,7 @@ export default function TopTeamsPage() {
                   <p className="text-2xl font-bold text-white">{waitingListTeams.length}</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>
