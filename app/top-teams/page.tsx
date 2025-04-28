@@ -57,8 +57,8 @@ export default function TopTeamsPage() {
    },
    {
      id: "HW007",
-     name: "Team Artificial",
-     leadName: "Anton jacob",
+     name: "Ash",
+     leadName: "Mirthun K S",
      college: "SVCE",
      domain: "Hardware",
    },
