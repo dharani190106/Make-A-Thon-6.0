@@ -21,11 +21,11 @@ export default function TopTeamsPage() {
      domain: "Hardware",
    },
    {
-     id: "HW002",
-     name: "The wave shifters",
-     leadName: "Ashvatha R",
+     id: "SW020",
+     name: "The Hack Pack",
+     leadName: "K. Tharun Vel",
      college: "SVCE",
-     domain: "Hardware",
+     domain: "Software",
    },
    {
      id: "HW003",
